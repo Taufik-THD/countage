@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Count Age </title>
+    <meta charset="utf-8">
+    <title>Count Age</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      .container {
+        display: flex;
+        height: 100vh;
+        background: red;
+        align-items: center;
+        background-image: url('https://res.cloudinary.com/karl-tech/image/upload/v1504037663/ethereum-coffee-roach_aajijn.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .box {
+        /*height: 350px;*/
+        width: 350px;
+        background-color: rgba(0, 0, 0, 0.5);;
+        color: #fff;
+        top: 50%;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        padding: 15px 0px 0px 0px;
+      }
+      .box h1 {
+        font-size: 16px;
+      }
+      .box #status-pekerjaan {
+        display: inline;
+        margin: 15px;
+      }
+      .tanggal {
+        padding: 15px;
+        margin-top: 15px;
+        background-color: rgba(0, 0, 0, 0.3);;
+      }
+      .input-group {
+        margin-bottom: 15px
+      }
+      .tanggal input {
+        width: 100px;
+      }
+      .buttons {
+        width: 100%;
+        text-align: center;
+      }
+      .buttons button {
+        color: #fff;
+        padding: 15px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);;
+        border: none;
+        cursor: pointer;
+        border-bottom-right-radius: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1 id="status-pekerjaan">Status Pekerjaan</h1>
+        <select name="status_pekerjaan" id="status" >
+          <option value="guru">Guru</option>
+          <option value="pegawai">Pegawai</option>
+        </select>
+        <div class="tanggal">
+          <div class="input-group">
+            <h1>Tanggal Sekarang</h1>
+            <input type="text" name="" value="" id="tanggal" placeholder="Tanggal">
+            <input type="text" name="" value="" id="bulan" placeholder="Bulan">
+            <input type="text" name="" value="" id="tahun" placeholder="Tahun">
+          </div>
+          <div class="input-group">
+            <h1>Tanggal Lahir</h1>
+            <input type="text" name="" value="" id="hlahir" placeholder="Tanggal">
+            <input type="text" name="" value="" id="blahir" placeholder="Bulan">
+            <input type="text" name="" value="" id="tlahir" placeholder="Tahun">
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="button" name="hitung" onclick="tampilkan()">Hitung</button>
+        </div>
+      </div>
+    </div>
+    <script src="sweetalert2.all.min.js"></script>
+    <script type = "text/javascript" src = "CountAge.js"></script>
+  </body>
+</html>
